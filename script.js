@@ -3,6 +3,7 @@ const container = document.getElementById('container');
 const generateBtn = document.getElementById("generate");
 const sortBtn = document.getElementById("sort");
 const speedSlider = document.getElementById("speed");
+const sizeSlider = document.getElementById("size");
 
 let arr = [];
 
@@ -11,7 +12,7 @@ function generateArray(){
     arr=[];
     container.innerHTML = "";
 
-    for(let i=0;i<20;i++){
+    for(let i=0;i<sizeSlider.value;i++){
 
         const value = Math.floor(Math.random()*300)+20;
 
@@ -69,5 +70,6 @@ async function bubbleSort(){
 
 sortBtn.addEventListener("click", bubbleSort);
 generateBtn.addEventListener("click",generateArray);
+sizeSlider.addEventListener("input", generateArray);
 
 generateArray();

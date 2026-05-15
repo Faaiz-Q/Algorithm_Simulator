@@ -25,7 +25,8 @@ button:disabled {
 }
 
 .bar{
-    width:200px;
+    flex:1;
+    max-width:40px;
     background-color: maroon;
 
     transition : height 0.3s ease;
