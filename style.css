@@ -1,0 +1,19 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    background-color:rgb(247, 154, 74);
+}
+
+#container{
+    width:90%;
+    height:400px;
+
+    margin: 30px auto;
+
+    border : 2px solid black;
+    display:flex;
+
+    align-items:flex-end;
+    justify-content:center;
+
+}
